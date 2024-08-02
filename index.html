@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游泳馆签到系统</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏊‍♂️ 游泳馆签到系统</h1>
+        <div id="loginSection">
+            <div class="login-container">
+                <input type="text" id="username" placeholder="请输入用户名">
+                <button class="login-button" onclick="login()">登录</button>
+            </div>
+        </div>
+        <div id="currentUser"></div>
+        <div id="mainSection" style="display: none;">
+            <div class="button-group">
+                <button id="checkIn">📥 签到</button>
+                <button id="checkOut">📤 签退</button>
+            </div>
+            <p id="message"></p>
+            <h2>签到记录</h2>
+            <div class="table-container">
+                <table id="recordTable">
+                    <thead>
+                        <tr>
+                            <th>签到时间</th>
+                            <th>签退时间</th>
+                            <th>在馆时长</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
